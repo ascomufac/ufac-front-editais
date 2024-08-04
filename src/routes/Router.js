@@ -5,7 +5,7 @@ import { Navigate } from "react-router-dom";
 const FullLayout = lazy(() => import("../layouts/FullLayout.js"));
 
 /***** Pages ****/
-
+const Concursos = lazy(() => import("../views/ui/Concursos.js"));
 const Starter = lazy(() => import("../views/Starter.js"));
 const About = lazy(() => import("../views/About.js"));
 const Alerts = lazy(() => import("../views/ui/Alerts"));
@@ -14,6 +14,8 @@ const Buttons = lazy(() => import("../views/ui/Buttons"));
 const Cards = lazy(() => import("../views/ui/Cards"));
 const Grid = lazy(() => import("../views/ui/Grid"));
 const Tables = lazy(() => import("../views/ui/Tables"));
+const Edital = lazy(() => import("../views/ui/Edital"));
+const Editais = lazy(() => import("../views/ui/Editais"));
 const Forms = lazy(() => import("../views/ui/Forms"));
 const Breadcrumbs = lazy(() => import("../views/ui/Breadcrumbs"));
 
@@ -25,6 +27,9 @@ const ThemeRoutes = [
     element: <FullLayout />,
     children: [
       { path: "/", element: <Navigate to="/starter" /> },
+      { path: "/concursos", exact: true, element: <Concursos /> },
+      { path: "/edital/:pasta/:edital", exact: true, element: <Edital /> },
+      { path: "/editais/:pasta", exact: true, element: <Editais /> },
       { path: "/starter", exact: true, element: <Starter /> },
       { path: "/about", exact: true, element: <About /> },
       { path: "/alerts", exact: true, element: <Alerts /> },

@@ -15,3 +15,15 @@ export const fetchData = async (endpointParam) => {
     throw error;
   }
 };
+
+export const fetchDataFile = async (endpointParam) => {
+  try {
+    const response = await axios.get(`${endpointParam}`,{
+        headers:{Accept: 'application/json', Authorization: 'Basic YWRtaW46YWRtaW4='
+    }});
+    return response.data;
+  } catch (error) {
+    console.error('Erro ao obter dados da API:', error);
+    throw error;
+  }
+};

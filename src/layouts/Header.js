@@ -85,37 +85,83 @@ const Header = () => {
               Pró-Reitorias
             </DropdownToggle>
             <DropdownMenu end>
-              <DropdownItem>Proex</DropdownItem>
+              <DropdownItem>
+                <Link to="editais/proex" className="dropdown-item">
+                  PROEX
+                </Link>
+              </DropdownItem>
               <DropdownItem divider />
-              <DropdownItem>Proaes</DropdownItem>
+              <DropdownItem>
+                <Link to="editais/proaes" className="dropdown-item">
+                  PROAES
+                </Link>
+              </DropdownItem>
               <DropdownItem divider />
-              <DropdownItem>Prograd</DropdownItem>
+              <DropdownItem>
+                <Link to="editais/prograd" className="dropdown-item">
+                  PROGRAD
+                </Link>
+              </DropdownItem>
               <DropdownItem divider />
-              <DropdownItem>Propeg</DropdownItem>
+              <DropdownItem>
+                <Link to="editais/propeg" className="dropdown-item">
+                  PROPEG
+                </Link>
+              </DropdownItem>
               <DropdownItem divider />
-              <DropdownItem>Prodgep</DropdownItem>
-              <DropdownItem divider />
-              <DropdownItem>Reset</DropdownItem>
+              <DropdownItem>
+                <Link to="editais/prodgep" className="dropdown-item">
+                  PRODGEP
+                </Link>
+              </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
           <UncontrolledDropdown inNavbar nav>
             <DropdownToggle caret nav>
-              Editais Acadêmicos
+              Centros Acadêmicos
             </DropdownToggle>
             <DropdownMenu end>
-              <DropdownItem>CCBN</DropdownItem>
+              <DropdownItem>
+                <Link to="editais/ccbn" className="dropdown-item">
+                  CCBN
+                </Link>
+              </DropdownItem>
               <DropdownItem divider />
-              <DropdownItem>CCET</DropdownItem>
+              <DropdownItem>
+                <Link to="editais/ccet" className="dropdown-item">
+                  CCET
+                </Link>
+              </DropdownItem>
               <DropdownItem divider />
-              <DropdownItem>CCJSA</DropdownItem>
+              <DropdownItem>
+                <Link to="editais/ccjsa" className="dropdown-item">
+                  CCJSA
+                </Link>
+              </DropdownItem>
               <DropdownItem divider />
-              <DropdownItem>CELA</DropdownItem>
+              <DropdownItem>
+                <Link to="editais/cela" className="dropdown-item">
+                  CELA
+                </Link>
+              </DropdownItem>
               <DropdownItem divider />
-              <DropdownItem>CFCH</DropdownItem>
+              <DropdownItem>
+                <Link to="editais/cfch" className="dropdown-item">
+                  CFCH
+                </Link>
+              </DropdownItem>
               <DropdownItem divider />
-              <DropdownItem>CMULTI</DropdownItem>
+              <DropdownItem>
+                <Link to="editais/cmulti" className="dropdown-item">
+                  CMULTI
+                </Link>
+              </DropdownItem>
               <DropdownItem divider />
-              <DropdownItem>CEL</DropdownItem>
+              <DropdownItem>
+                <Link to="editais/cel" className="dropdown-item">
+                  CEL
+                </Link>
+              </DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
           <UncontrolledDropdown inNavbar nav>
@@ -139,6 +185,8 @@ const Header = () => {
             </DropdownMenu>
           </UncontrolledDropdown>
         </Nav>
+        {
+        /*
         <Dropdown isOpen={dropdownOpen} toggle={toggle}>
           <DropdownToggle color="transparent">
             <img
@@ -158,6 +206,7 @@ const Header = () => {
             <DropdownItem>Logout</DropdownItem>
           </DropdownMenu>
         </Dropdown>
+        */}
       </Collapse>
     </Navbar>
   );
