@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 //const API_URL = 'http://200.129.173.67:8080/Portal';
-const API_URL = 'http://localhost:8080/Plone';
+const API_URL = 'http://localhost:8080/editais';
 // const caminho = 'home';
 
 export const fetchData = async (endpointParam) => {
